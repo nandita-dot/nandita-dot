@@ -6,7 +6,7 @@
 
 <br/>
 
-<img src="./assets/dino-runner.svg" width="100%" alt="Dino jumping over bugs" />
+<img src="./assests/dino-runner.svg" width="100%" alt="Dino jumping over bugs" />
 
 <br/>
 
