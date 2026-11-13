@@ -1,10 +1,12 @@
 <div align="center">
 
-# Nandita Nair
-
-### AI/ML × Software Engineering × Backend
+<img src="https://capsule-render.vercel.app/api?type=waving&color=8B5CF6&height=140&section=header&text=Nandita%20Nair&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%2FML%20%C3%97%20Software%20Engineering%20%C3%97%20Backend&descSize=16&descAlignY=60" width="100%" alt="Header" />
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2800&pause=900&color=8B5CF6&center=true&vCenter=true&width=650&lines=Building+intelligent+systems.;Turning+data+into+useful+decisions.;Designing+backend+systems+that+actually+work.;Learning%2C+building%2C+shipping." alt="Typing animation" />
+
+<br/>
+
+<img src="./assets/dino-runner.svg" width="100%" alt="Dino jumping over bugs" />
 
 <br/>
 
@@ -101,15 +103,25 @@ Highlights:
 
 ---
 
-### 🤖 AI Research Agent
+### 📚 VAAYANA (വായന) — AI-Powered Interactive Learning Platform
 
-A tool-calling AI agent that can decide when it needs external information, search the web, and produce structured, source-aware responses.
+An offline-first educational platform designed specifically for a Kerala government school, transforming textbook chapters into engaging, interactive smartboard learning experiences for Class 4 students.
 
-**Built with:** Python · LangChain · Google Gemini · DuckDuckGo · Pydantic
+**Built with:** React · TypeScript · Tailwind CSS · Python · FastAPI · Gemini API · SQLite · IndexedDB
 
-The project explores the difference between a basic LLM application and an **agent capable of interacting with external tools**.
+**Features include:**
 
-🔗 **[Explore the project →](https://github.com/nandita-dot/ai-research-agent)**
+* AI-assisted textbook chapter analysis
+* Interactive, curriculum-aligned learning experiences
+* Teacher-controlled lesson generation, editing and approval
+* Custom educational simulations and manipulatives
+* Gamified quizzes and animated learning activities
+* Malayalam-first learning with English language support
+* Offline-first architecture with local lesson storage
+* Reusable educational content and lesson caching
+* Responsive smartboard-friendly interface
+
+🔗 **[Explore the project →](https://github.com/nandita-dot/vaayana)**
 
 ---
 
@@ -160,9 +172,9 @@ The project explores the difference between a basic LLM application and an **age
 
 📊 **CoCubes 615 — 6th rank in college**
 
-🧩 **200+ DSA problems solved**
+🧩 **300+ DSA problems solved**
 
-🎓 **BE Computer Science & Engineering — CGPA 9.35/10**
+🎓 **BE Computer Science & Engineering — CGPA 9.33/10**
 
 ---
 
@@ -213,5 +225,7 @@ If you're working on something interesting in **AI/ML, backend engineering, or s
 <br/>
 
 **[LinkedIn](https://www.linkedin.com/in/nandita-nair-n/) · [LeetCode](https://leetcode.com/u/nandita1805/) · [GitHub](https://github.com/nandita-dot)**
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=8B5CF6&height=100&section=footer" width="100%" alt="Footer" />
 
 </div>
