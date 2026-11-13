@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="800" height="180" role="img" aria-label="Pixel dinosaur jumping over cacti">
+  <style>
+    :root { --fg: #535353; }
+    @media (prefers-color-scheme: dark) { :root { --fg: #d4d4d4; } }
+    .fg { fill: var(--fg); }
+    .ln { stroke: var(--fg); fill: none; }
+    text { fill: var(--fg); font-family: 'Courier New', monospace; font-weight: bold; }
+
+    .jump  { animation: jump 2s infinite; }
+    .legA  { animation: step .3s steps(1) infinite; }
+    .legB  { animation: step .3s steps(1) infinite reverse; }
+    .cact  { animation: run 4s linear infinite; }
+    .cact2 { animation: run 4s linear infinite; animation-delay: -2s; }
+    .cl1   { animation: run 16s linear infinite; }
+    .cl2   { animation: run 24s linear infinite; animation-delay: -9s; }
+    .ground{ animation: dash .52s linear infinite; }
+
+    @keyframes jump {
+      0%, 48%   { transform: translateY(0); }
+      62%, 76%  { transform: translateY(-62px); }
+      94%, 100% { transform: translateY(0); }
+    }
+    @keyframes step { 0% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+    @keyframes run  { from { transform: translateX(820px); } to { transform: translateX(-80px); } }
+    @keyframes dash { to { stroke-dashoffset: -114; } }
+  </style>
+
+  <defs>
+    <g id="cactus">
+      <rect class="fg" x="7" y="0" width="6" height="40" rx="3"/>
+      <rect class="fg" x="0" y="14" width="4" height="12" rx="2"/>
+      <rect class="fg" x="0" y="22" width="9" height="4"/>
+      <rect class="fg" x="16" y="8" width="4" height="12" rx="2"/>
+      <rect class="fg" x="11" y="16" width="7" height="4"/>
+    </g>
+    <g id="cloud">
+      <rect class="fg" x="0" y="8" width="46" height="8" rx="4" opacity=".35"/>
+      <rect class="fg" x="10" y="2" width="22" height="10" rx="5" opacity=".35"/>
+    </g>
+  </defs>
+
+  <!-- HUD -->
+  <text x="780" y="24" text-anchor="end" font-size="14">HI 9.35 CGPA  ·  nandita.exe</text>
+
+  <!-- clouds -->
+  <g transform="translate(0,34)"><g class="cl1"><use href="#cloud"/></g></g>
+  <g transform="translate(0,64)"><g class="cl2"><use href="#cloud"/></g></g>
+
+  <!-- ground -->
+  <line class="ln ground" x1="0" y1="152" x2="800" y2="152" stroke-width="2"/>
+  <line class="ln ground" x1="0" y1="160" x2="800" y2="160" stroke-width="2" stroke-dasharray="3 30 8 50 2 40" style="animation-duration:.8s"/>
+
+  <!-- cactus: single -->
+  <g transform="translate(0,112)"><g class="cact"><use href="#cactus"/></g></g>
+  <!-- cactus: double -->
+  <g transform="translate(0,112)"><g class="cact2">
+    <use href="#cactus"/>
+    <g transform="translate(22,8) scale(.85)"><use href="#cactus"/></g>
+  </g></g>
+
+  <!-- dino -->
+  <g transform="translate(60,106)">
+    <g class="jump">
+      <rect class="fg" x="22" y="0"  width="22" height="16"/>
+      <rect class="fg" x="28" y="14" width="14" height="3"/>
+      <rect fill="#fff" x="36" y="3" width="3" height="3"/>
+      <rect class="fg" x="12" y="16" width="22" height="20"/>
+      <rect class="fg" x="4"  y="22" width="10" height="14"/>
+      <rect class="fg" x="0"  y="22" width="6"  height="6"/>
+      <rect class="fg" x="32" y="26" width="7"  height="3"/>
+      <g class="legA"><rect class="fg" x="14" y="36" width="7" height="10"/><rect class="fg" x="14" y="43" width="11" height="3"/></g>
+      <g class="legB"><rect class="fg" x="26" y="36" width="7" height="10"/><rect class="fg" x="26" y="43" width="11" height="3"/></g>
+    </g>
+  </g>
+</svg>
